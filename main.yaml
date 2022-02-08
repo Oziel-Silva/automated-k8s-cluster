@@ -1,0 +1,7 @@
+---
+# This task will be install docker and kubernetes in all hosts.
+- name: Install kubernetes and their dependencies.
+  become: true
+  hosts: all
+  roles: 
+    - docker
